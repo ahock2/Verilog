@@ -1,18 +1,18 @@
 `timescale 1ns / 1ps
-/////////////////////////////////////////////////////////////////////////////////
-// Create Date:    11:56:23 11/13/2017  
-// Name: Adam Hock 
-//
-// Project Name: TrafficLight.v
-//
-// Description:   This program (when connected to an FGPA circuit board)
-//						simulates a traffic light controller. When one traffic light
-//						is red and there is a car waiting at the traffic light. The light
-//						will wait 12 clock cycles. This clock will stop if the car leaves for a right turn.
-//						When the clock reaches 12 clock cycles, the green light will turn yellow. Then, after
-//						4 more clock cycles, the yellow light will turn red and the other red light will turn green.
-//						This project was created in my digital logic class.						
-//////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Create Date:    11:56:23 11/13/2017                                                                        //
+// Name: Adam Hock                                                                                            //
+//                                                                                                            //
+// Project Name: TrafficLight.v                                                                               //
+//                                                                                                            //
+// Description:   This program (when connected to an FGPA circuit board)                                      //
+//		  simulates a traffic light controller. When one traffic light                                //
+//		  is red and there is a car waiting at the traffic light. The light                           //
+//		  will wait 12 clock cycles. This clock will stop if the car leaves for a right turn.         //
+//		  When the clock reaches 12 clock cycles, the green light will turn yellow. Then, after       //
+//		  4 more clock cycles, the yellow light will turn red and the other red light will turn green.//
+//		  This project was created in my digital logic class.					      //
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 module TrafficLight(
     input NS_sensor,
     input EW_sensor,
